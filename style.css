@@ -149,7 +149,7 @@ details {
     border-radius: 2%;
     border-style: double;
     border-color: burlywood;
-    border-width: 3%;
+    border-width: thin;
 }
 
 /* Size details */
