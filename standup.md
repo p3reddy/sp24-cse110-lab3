@@ -11,18 +11,21 @@ All team members should provide their priorities, progress, and problems each da
 
 
 ## Monday
+
 | Name        | Priorities  | Progress | Problems |
 | ----------- | ----------- | -------- | -------- |
 |      Sample text       |   sample priority          |     sample progress     |      sample problem    |
 |      Sample text 2      |   sample priority 2         |     sample progress 2     |      sample problem 2   |
 
 ## Tuesday
+
 | Name        | Priorities  | Progress | Problems |
 | ----------- | ----------- | -------- | -------- |
 |      Sample text       |   sample priority          |     sample progress     |      sample problem    |
 |      Sample text 2      |   sample priority 2         |     sample progress 2     |      sample problem 2   |
 
 ## Wednesday
+
 | Name        | Priorities  | Progress | Problems |
 | ----------- | ----------- | -------- | -------- |
 |      Sample text       |   sample priority          |     sample progress     |      sample problem    |
@@ -30,12 +33,14 @@ All team members should provide their priorities, progress, and problems each da
 
 
 ## Thursday
+
 | Name        | Priorities  | Progress | Problems |
 | ----------- | ----------- | -------- | -------- |
 |      Sample text       |   sample priority          |     sample progress     |      sample problem    |
 |      Sample text 2      |   sample priority 2         |     sample progress 2     |      sample problem 2   |
 
 ## Friday
+
 | Name        | Priorities  | Progress | Problems |
 | ----------- | ----------- | -------- | -------- |
 |      Sample text       |   sample priority          |     sample progress     |      sample problem    |
