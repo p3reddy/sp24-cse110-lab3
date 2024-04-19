@@ -106,7 +106,7 @@ header {
 }
 
 summary:has(+p) {
-    color:chocolate;
+    color: chocolate;
 }
 
 /* Indent body text */
@@ -131,7 +131,8 @@ h2+p {
     padding-bottom: 1%;
 }
 
-ol,ul{
+ol,
+ul {
     border: 4mm ridge rgba(211, 220, 50, .6);
 }
 
