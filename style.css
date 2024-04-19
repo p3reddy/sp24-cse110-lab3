@@ -19,11 +19,21 @@
 
 * {
     font-family: "playfairdisplay", Times, serif;
+    --nav-link-color: color-mix(in lch, plum 40%, pink);
 }
 
 /* Styling links */
 a {
     color: hotpink;
+
+    &[title] {
+        color: purple;
+    }
+}
+
+header {
+    position: sticky;
+    top: 10px;
 }
 
 .nav-list {
@@ -31,6 +41,8 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    position: sticky;
+    top: 10px;
 
     list-style: none;
 
@@ -38,19 +50,25 @@ a {
     padding: 1em 0.5em 1em 0.5em;
     width: max-content;
     background-color: rgb(0, 51, 128);
-    margin: 50px auto 50px auto;
+    margin: 0 auto 50px auto;
 
     /* style links in nav bar */
     & a {
         text-decoration: none;
         display: block;
         padding: 1em;
-        color: color-mix(in lch, plum 40%, pink);
+        color: var(--nav-link-color, red);
 
         /* extra styling on hover */
         &:hover {
             background-color: #1565C0;
             color: color(srgb-linear 1 1 0);
+        }
+
+        /* extra styling on active */
+        &:active {
+            background-color: #1565C0;
+            color: white;
         }
     }
 
@@ -60,26 +78,40 @@ a {
 }
 
 @media all and (max-width: 800px) {
-    .navigation {
+    .nav-list {
         /* When on medium sized screens, we center it by evenly distributing empty space around items */
         justify-content: space-around;
+    }
+
+    header {
+        position: static;
     }
 }
 
 @media all and (max-width: 500px) {
-    .navigation {
+    .nav-list {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
+    }
+
+    header {
+        position: static;
     }
 }
 
 /* Center align date */
 #date {
     text-align: center;
+    text-decoration: underline;
+}
+
+summary:has(+p) {
+    color: chocolate;
 }
 
 /* Indent body text */
 body p {
+    min-width: auto;
     margin-left: 50px;
 }
 
@@ -99,8 +131,25 @@ h2+p {
     padding-bottom: 1%;
 }
 
+ol,
+ul {
+    border: 4mm ridge rgba(211, 220, 50, .6);
+}
+
+ol.nav-list {
+    border: 4mm ridge rgb(184, 30, 158);
+}
+
+legend~label {
+    font-style: italic;
+}
+
 details {
     max-width: 350px;
+    border-radius: 2%;
+    border-style: double;
+    border-color: burlywood;
+    border-width: 3%;
 }
 
 /* Size details */
@@ -124,4 +173,23 @@ details {
 #jesus-details {
     grid-column: 3 / 3;
     grid-row: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+audio {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
